@@ -29,6 +29,7 @@ function selectSym(sym){
 }
 
 function startGame() {
+  document.querySelector('.Replay').style.display="none";
   document.querySelector('.endgame').style.display = "none";
   document.querySelector('.endgame .text').innerText ="";
   document.querySelector('.selectSym').style.display = "block";
@@ -78,6 +79,7 @@ function gameOver(gameWon){
 }
 
 function declareWinner(who) {
+  document.querySelector('.Replay').style.display="block";
   document.querySelector(".endgame").style.display = "block";
   document.querySelector(".endgame .text").innerText = who;
 }
